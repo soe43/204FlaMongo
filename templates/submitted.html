@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Results</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Results</h1>
+    <h4 style="text-align: center">{{show}}</h4>
+    <table align="center" border="1px solid black">
+      <tr>
+	<th>Age</th>
+	<th>Female Population</th>
+	<th>Male Population</th>
+      </tr>
+      {% for row in results %}
+      <tr style="text-align: center">
+	<td>{{row["age"]}}</td>
+	<td>{{row["females"]}}</td>
+	<td>{{row["males"]}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
