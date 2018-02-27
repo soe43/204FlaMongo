@@ -4,7 +4,10 @@
     <title>Population Info</title>
   </head>
   <body>
-    <h1>Search for (dropdown) (population)</h1><br><br>
+    <h1>Search the U.S. Population Table Database</h1>
+    <p>This dataset contains information about the number of females and males of each age (0 to 100) in the U.S.</p>
+    <p>Dropdown gives you options for what to search for, e.g. ages where female/male population is less than/greater than (population size).  </p><p>Please specify the population size in the text field.</p><br><br><br>
+    <h3>Search for:</h3><br>
     <form action="/submitted" method="POST">
       <select name="dropdown">
 	<option value="femalelte">Ages of Females With a Population Less Than or Equal To</option>
@@ -12,7 +15,7 @@
 	<option value="poplte">Ages in which Number of Females OR Number of Males Is Less Than</option>
       </select>
       <br><br>
-      Type Population Number Here
+      Type Population Size Here
       <input name="input"></input>
       <br><br><br>
       <button value="submit">Submit</button>

@@ -3,9 +3,12 @@ import utils.db as d
 
 app=Flask(__name__)
 
-#c=d.connection
-#c.drop_database("gaoJsoeW")
-#d.createDB()
+##DROP DATABASE
+c=d.connection
+c.drop_database("gaoJsoeW")
+
+##CREATE DATABASE
+d.createDB()
 
 @app.route("/")
 def home():
